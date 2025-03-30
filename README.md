@@ -1,10 +1,10 @@
-# MacOS Neovim
+# macOS Neovim
 
 <img src="https://github.com/user-attachments/assets/5ad505fd-2a86-4a59-80bc-cac4b697f6d6" alt="apple-logo-transparent" width="100" height="100">  
 <img src="https://github.com/user-attachments/assets/593d1812-c3d8-472e-a130-01544de09a83" alt="neovim-logo-png-transparent" width="290" height="85">
 
 \
-A MacOS application for opening files in Neovim.
+A macOS application for opening files in Neovim.
 
 ## Features
 
