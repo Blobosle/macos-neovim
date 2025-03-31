@@ -30,3 +30,10 @@ The bash script takes in three arguments:
 List of the currently supported terminal emulators and their corresponding keywords.
 - Default terminal (```terminal.app```): ```terminal```
 - iTerm (```iTerm.app```): ```iterm```
+
+## Common issues
+
+### Logo not loading
+
+Often is a refreshing issue.
+Fixed by left clickling the application and selecting ```Get info```
