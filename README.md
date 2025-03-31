@@ -14,7 +14,7 @@ A macOS application for opening files in Neovim.
 
 ## Requirements
 
-macOS and installed ```codesign``` which is used to avoid macOS gatekeeping issues. If not installed run the following command.
+macOS with ```codesign``` installed, used to avoid macOS gatekeeping issues. If not installed run the following command.
 ```console
 xcode-select --install
 ```
