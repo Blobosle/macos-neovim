@@ -9,7 +9,7 @@ A macOS application for opening files in Neovim.
 ## Features
 
 macOS Neovim app:
-- Open the corresponding file in your Neovim instance.
+- Open a file of your choice in your Neovim instance.
 - Open the default/specified file explorer at the home directory if opening the app directly.
 - Exiting and closing shell automatically when opening files.
 
