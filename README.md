@@ -36,6 +36,8 @@ The bash script takes in three arguments:
 ```
 > You can select a terminal emulator by explicitly typing the name of the emulator, please refer to the [emulator](##terminal-emulators) section.
 
+Running ```./build.sh``` with only the terminal emulator specified will default the name to be ```Neovim``` and the image path to be ```./logo.png```.
+
 ## Terminal Emulators
 
 List of the currently supported terminal emulators and their corresponding keywords.
