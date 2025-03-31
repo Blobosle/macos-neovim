@@ -20,7 +20,7 @@ To create the application run the following command:
 ```
 The bash script takes in three arguments:
 ```console
-./build.sh [TERMINAL EMULATOR PREFERENCE] [NAME OF APP] [PATH TO LOGO IMAGE]
+./build.sh [TerminalEmulator] [AppName] [PathToLogoImg]
 ```
 > You can select a terminal emulator by explicitly typing the name of the emulator, please refer to the [emulator](##terminal-emulators) section.
 
