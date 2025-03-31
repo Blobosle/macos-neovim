@@ -53,7 +53,7 @@ The following is a step by step guide on how to implement it as a menu option:
 ...
 ```
 
-Add the file extensions that you want your app to appear in the ```Open With``` menu. The following is an example for the ```.txt``` and ```.tex``` file extensions.
+Add the file extensions of the files that you want the app to appear in their ```Open With``` menu. The following is an example for the ```.txt``` and ```.tex``` file extensions.
 ```html
 <key>CFBundleTypeExtensions</key>
 <array>
