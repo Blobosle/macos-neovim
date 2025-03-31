@@ -8,9 +8,14 @@ A macOS application for opening files in Neovim.
 
 ## Features
 
-- Open the corresponding file in your Neovim instance
-- Open the default/specified file explorer at the home directory if opening the app directly
-- Exiting and closing shell automatically when opening files
+macOS Neovim app:
+- Open the corresponding file in your Neovim instance.
+- Open the default/specified file explorer at the home directory if opening the app directly.
+- Exiting and closing shell automatically when opening files.
+
+Build setup:
+- Automatic custom name and logo for the macOS Neovim app.
+- Support for multiple terminal emulators.
 
 ## Requirements
 
@@ -49,6 +54,8 @@ Fixed by left-clickling the application and selecting ```Get Info```
 ### Adding the application to ```Open With``` menu
 
 The app will not appear in the ```Open With``` option when left-clicking the file you want to open.
+
+This feature may be integrated later on.
 
 The following is a step by step guide on how to implement it as a menu option:
 
