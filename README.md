@@ -42,10 +42,10 @@ List of the currently supported terminal emulators and their corresponding keywo
 - Default terminal (```terminal.app```): ```terminal```
 - iTerm (```iTerm.app```): ```iterm```
 
-| Terminal Emulator | Keyword  | App Bundle   |
+| Terminal Emulator | App Bundle  |  Keyword  |
 |-------------------|----------|--------------|
-| Default terminal  | ```terminal``` | Terminal.app |
-| iTerm             | ```iterm```   | iTerm.app    |
+| macOS terminal  | Terminal.app | ```terminal``` |
+| iTerm             | iTerm.app   | ```iterm```    |
 
 
 ## Common issues
