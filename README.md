@@ -8,7 +8,6 @@ A macOS application for opening files in Neovim.
 
 ## Features
 
-The application will:
 - Open the corresponding file in your Neovim instance
 - Open the default/specified file explorer at the home directory if opening the app directly
 - Exiting and closing shell automatically when opening files
@@ -36,4 +35,52 @@ List of the currently supported terminal emulators and their corresponding keywo
 ### Logo not loading
 
 Often is a refreshing issue.
-Fixed by left clickling the application and selecting ```Get info```
+Fixed by left-clickling the application and selecting ```Get Info```
+
+## Additional options
+
+### Adding the application to Open With menu
+
+The app will not appear in the ```Open With``` option when left-clicking the file you want to open.
+
+The following is a step by step guide on how to implement it as a menu option:
+
+1. Open the ```info.plist``` file, which can be found in ```PathToApp/AppName.app/Contents/Info.plist```, and modify under ```CFBundleTypeExtensions``` the tags. It should look something like this
+```html
+<key>CFBundleTypeExtensions</key>
+<array>
+    <string>*</string>
+...
+```
+
+Add the file extensions that you want your app to appear in the ```Open With``` menu. The following is an example for the ```.txt``` and ```.tex``` file extensions.
+```html
+<key>CFBundleTypeExtensions</key>
+<array>
+    <string>tex</string>
+    <string>txt</string>
+    <string>*</string>
+...
+```
+
+2. Rebuild the LaunchServices database by recursively re-registering apps.
+```console
+/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain system -domain user
+```
+
+3. Remove all extended attributes from your application using the following command.
+```console
+xattr -rc /PathToApp/AppName.app
+```
+
+4. Forcefully re-signs the application at /Applications/APPNAME.app, including all nested components, using an ad-hoc signature, with no dev, using the following command.
+```console
+codesign --force --deep --sign - /PathToApp/AppName.app
+```
+
+5. Use the following command to verify the code signature.
+```console
+codesign --verify --deep --strict /PathToApp/AppName.app
+```
+
+Done, now it should be available in the ```Open With``` menu's of all apps that have your selected extensions.
