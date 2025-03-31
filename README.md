@@ -45,7 +45,7 @@ The app will not appear in the ```Open With``` option when left-clicking the fil
 
 The following is a step by step guide on how to implement it as a menu option:
 
-1. Open the ```info.plist``` file, which can be found in ```PathToApp/AppName.app/Contents/Info.plist```, and modify under ```CFBundleTypeExtensions``` the tags. It should look something like this
+1. Open the ```info.plist``` file, which can be found in ```PathToApp/AppName.app/Contents/Info.plist```, and modify the tags under ```CFBundleTypeExtensions```. It should look something like this
 ```html
 <key>CFBundleTypeExtensions</key>
 <array>
