@@ -12,6 +12,13 @@ A macOS application for opening files in Neovim.
 - Open the default/specified file explorer at the home directory if opening the app directly
 - Exiting and closing shell automatically when opening files
 
+## Requirements
+
+macOS and installed ```codesign``` which is used to avoid macOS gatekeeping issues. If not installed run the following command.
+```console
+xcode-select --install
+```
+
 ## Build
 
 To create the application run the following command:
