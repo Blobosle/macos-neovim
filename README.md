@@ -39,8 +39,6 @@ The bash script takes in three arguments:
 ## Terminal Emulators
 
 List of the currently supported terminal emulators and their corresponding keywords.
-- Default terminal (```terminal.app```): ```terminal```
-- iTerm (```iTerm.app```): ```iterm```
 
 | Terminal Emulator | App Bundle  |  Keyword  |
 |-------------------|----------|--------------|
