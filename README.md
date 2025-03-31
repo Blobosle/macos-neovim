@@ -46,7 +46,7 @@ Fixed by left-clickling the application and selecting ```Get Info```
 
 ## Additional options
 
-### Adding the application to Open With menu
+### Adding the application to ```Open With``` menu
 
 The app will not appear in the ```Open With``` option when left-clicking the file you want to open.
 
