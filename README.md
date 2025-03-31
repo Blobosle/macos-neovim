@@ -73,7 +73,7 @@ Add the file extensions that you want your app to appear in the ```Open With``` 
 xattr -rc /PathToApp/AppName.app
 ```
 
-4. Forcefully re-signs the application at /Applications/APPNAME.app, including all nested components, using an ad-hoc signature, with no dev, using the following command.
+4. Forcefully re-sign the application, including all nested components, using an ad-hoc signature, with no dev, using the following command.
 ```console
 codesign --force --deep --sign - /PathToApp/AppName.app
 ```
