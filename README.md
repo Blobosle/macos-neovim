@@ -20,18 +20,18 @@ Build setup:
 ## Requirements
 
 macOS with ```codesign``` installed, used to avoid macOS gatekeeping issues. If not installed run the following command.
-```console
+```
 xcode-select --install
 ```
 
 ## Build
 
 To create the application run the following command:
-```console
+```
 ./build.sh terminal Neovim logo.png
 ```
 The bash script takes in three arguments:
-```console
+```
 ./build.sh [TerminalEmulator] [AppName] [PathToLogoImg]
 ```
 > You can select a terminal emulator by explicitly typing the name of the emulator, please refer to the [emulator](##terminal-emulators) section.
@@ -84,22 +84,22 @@ Add the file extensions of the files that you want the app to appear in their ``
 ```
 
 2. Rebuild the LaunchServices database by recursively re-registering apps.
-```console
+```
 /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain system -domain user
 ```
 
 3. Remove all extended attributes from your application using the following command.
-```console
+```
 xattr -rc /PathToApp/AppName.app
 ```
 
 4. Forcefully re-sign the application, including all nested components, using an ad-hoc signature, with no dev, using the following command.
-```console
+```
 codesign --force --deep --sign - /PathToApp/AppName.app
 ```
 
 5. Use the following command to verify the code signature.
-```console
+```
 codesign --verify --deep --strict /PathToApp/AppName.app
 ```
 
